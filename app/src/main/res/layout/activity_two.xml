@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TwoActivity">
+
+    <!-- TODO 20 : Ubah root layout menjadi ScrollView lalu berikan didalamnya TextView dengan teks yg tadi -->
+    <!-- TODO SESSION 2 FINISH - JALANKAN APLIKASI KE DEVICE -->
+    <!-- TODO 21 : Buat EmptyActivity baru seperti pada TODO 4 (pada project ini diberi nama ThreeActivity) -->
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:autoLink="all"
+        android:paddingStart="20dp"
+        android:paddingTop="5dp"
+        android:paddingEnd="20dp"
+        android:paddingBottom="5dp"
+        android:text="@string/text_a2" />
+
+</ScrollView>

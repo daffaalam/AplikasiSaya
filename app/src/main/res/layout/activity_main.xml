@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    tools:context=".MainActivity">
+
+    <!-- TODO 1 : Buat beberapa Button jangan lupa berikan ID -->
+
+    <Button
+        android:id="@+id/btA1Main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="activity 1" />
+
+    <Button
+        android:id="@+id/btA2Main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="activity 2" />
+
+    <Button
+        android:id="@+id/btA3Main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="activity 3" />
+
+    <Button
+        android:id="@+id/btA4Main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="activity 4" />
+
+    <Button
+        android:id="@+id/btA5Main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="activity 5" />
+
+</LinearLayout>

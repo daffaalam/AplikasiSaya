@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    tools:context=".FiveActivity">
+
+    <!-- TODO 37 : Ubah root layout menjadi RelativeLayout, dan tambahkan EditText, TextView dan Button seperti berikut, dimana pada RelativeLayout child view diatur secara bebas -->
+
+    <EditText
+        android:id="@+id/etA5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/etA5"
+        android:text="isi dengan nama anda"
+        android:textAlignment="center" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:onClick="sendA5"
+        android:text="kirim" />
+
+</RelativeLayout>

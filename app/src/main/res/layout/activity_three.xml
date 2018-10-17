@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    tools:context=".ThreeActivity">
+
+    <!-- TODO 22 : Ubah root layout menjadi LinearLayout dengan orientasi Vertical -->
+    <!-- TODO 23 : Buat EditText, Button, TextView dan Button lagi, berikan ID hanya untuk EditText dan TextView -->
+    <!-- TODO 24 : Pada tiap Button berikan atribut onClick, isi apa saja lalu tekan Alt+Enter dan pilih 'Create ... in ...' maka akan terbentuk suatu method pada Java -->
+
+    <EditText
+        android:id="@+id/etA3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nama Lengkap" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="settextA3"
+        android:text="setText"
+        android:textAllCaps="false" />
+
+    <TextView
+        android:id="@+id/tvA3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:textSize="20sp" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="toastA3"
+        android:text="toast" />
+
+</LinearLayout>
