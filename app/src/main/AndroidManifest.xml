@@ -2,6 +2,9 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.daffaalam.aplikasisaya">
 
+    <!-- TODO 48 : Klik kanan pada folder mipmap dan pilih New > Image Asset lalu buat icon sesuai selera -->
+    <!-- TODO 49 : Ubah nilai android:icon dengan icon yg dibuat tadi begitu juga dengan android:roundIcon -->
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -9,19 +12,51 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity">
+
+        <!-- TODO 50 : Tambahkan atribut android:theme pada activity main dan isi dengan @style/Theme.AppCompat.Light.NoActionBar untuk membuat tema pada activity tersebut tanpa ToolBar atas -->
+
+        <activity
+            android:name=".MainActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".OneActivity" />
-        <activity android:name=".TwoActivity" />
-        <activity android:name=".ThreeActivity" />
-        <activity android:name=".FourActivity" />
-        <activity android:name=".FiveActivity" />
-        <activity android:name=".FiveSecActivity"></activity>
+
+        <!-- TODO 51 : Tambahkan meta-data pada activity lain dengan atribut name android.support.PARENT_ACTIVITY dan value dengan activity utama yaitu MainAcitivity kecuali pada FiveSecActivity -->
+
+        <activity android:name=".OneActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+        <activity android:name=".TwoActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+        <activity android:name=".ThreeActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+        <activity android:name=".FourActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+        <activity android:name=".FiveActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+        <activity android:name=".FiveSecActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".FiveActivity" />
+        </activity>
     </application>
 
 </manifest>
